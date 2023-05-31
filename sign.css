@@ -1,0 +1,41 @@
+img.logo {
+	width:7%;
+}
+
+.imgcontainer {
+	text-align: center;
+}
+
+.signheading {
+	font-size:280%;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 600;
+}
+
+.form {
+	font-size:200%;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 400;
+}
+
+input[type="text"] {
+	width: 30%;
+	height: 50px;
+	margin:10px;
+	font-size:100%;
+	display: inline-block;
+}
+
+button {
+	background-color:#04AA6D;
+	color:white;
+	font-size: 110%;
+	width: 25%;
+	margin: 4px 0;
+	border: none;
+	height: 40px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
