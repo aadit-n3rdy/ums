@@ -1,0 +1,24 @@
+:root {
+    --black:#12181e;
+    --dark-green:#27ac1f;
+    --light-green:#85fe78;
+    --white:#ffffff;
+    --grey:#ddd;
+}
+
+a:link , a:visited{
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid var(--black);
+    padding: 0.2% .5% 0.2% .5%;
+    text-align: center;
+    display: inline-block;
+    margin: 0.5% 0.5%;
+    width: 8%;
+}
+
+a:hover, a:active {
+    color: var(--light-green);
+    background-color: var(--black);
+}
