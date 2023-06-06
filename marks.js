@@ -1,0 +1,1 @@
+document.getElementById("demo").textContent = mesage;

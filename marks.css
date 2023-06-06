@@ -1,24 +1,45 @@
+@import url("side-bar/home-side.css");
+
 :root {
-    --black:#12181e;
-    --dark-green:#27ac1f;
-    --light-green:#85fe78;
-    --white:#ffffff;
-    --grey:#ddd;
+    /* color scheme */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* transition colors */
+    --trans-02: all 0.2s ease;
+    --trans-03: all 0.3s ease;
+    --trans-04: all 0.4s ease;
+    --trans-05: all 0.5s ease;
+}
+
+body.dark {
+    /* dark color scheme */
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #6528e0;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: #CCC;    
 }
 
 a:link , a:visited{
     text-decoration: none;
-    background-color: var(--white);
-    color: var(--black);
-    border: 2px solid var(--black);
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    border: 2px solid var(--text-color);
     padding: 0.2% .5% 0.2% .5%;
     text-align: center;
     display: inline-block;
-    margin: 0.5% 0.5%;
-    width: 8%;
+    margin: 0.8% 0.8%;
+    width: 10%;
 }
 
 a:hover, a:active {
-    color: var(--light-green);
-    background-color: var(--black);
+    color: var(--primary-color-light);
+    background-color: var(--text-color);
+    transition: var(--trans-03);
 }
