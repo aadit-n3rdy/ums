@@ -1,0 +1,124 @@
+@import url('./config.css');
+
+body {
+	display: grid;
+	height: 100vh;
+	background-image: url(../assets/bg.jpg);
+	background-size: cover;
+}
+
+.main_div {
+	width: 30%;
+	height: 100%;
+	margin-left: 0px;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.main_div .title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+form {
+	margin-top: 25px;
+}
+
+form .input_box {
+	height: 50px;
+	width: 100%;
+	position: relative;
+	margin-top: 15px;
+}
+
+.input_box input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding-left: 45px;
+	font-size: 17px;
+	transition: all 0.3s ease;
+}
+
+.input_box input:focus {
+	border-color: #be2edd;
+}
+
+.input_box .icon {
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	color: var(--white);
+}
+
+form .option_div {
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.option_div .check_box {
+	display: flex;
+	align-items: center;
+	color: black;
+}
+
+.option_div span {
+	margin-left: 5px;
+	font-size: 16px;
+	color: #333;
+}
+
+.option_div .forget_div a {
+	font-size: 16px;
+	color: var(--black);
+}
+
+.button input {
+	padding-left: 0;
+	background: var(--dark-green);
+	color: white;
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.button input:hover {
+	background: var(--darker-green);
+}
+
+form .sign_up {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.sign_up a {
+	color: #be2edd;
+}
+
+form a {
+	text-decoration: none;
+}
+
+form a:hover {
+	text-decoration: underline;
+}
+
+.signheading {
+	font-size: 280%;
+	font-weight: 600;
+}
+
+img.logo {
+	width: 40%;
+
+}
+
