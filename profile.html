@@ -4,6 +4,7 @@
 	<head>
 		<title>Profile | UMS </title>
 		<link rel="stylesheet" href="css/profile.css">
+		<script type="text/javascript" src="scripts/changePassword.js"></script>
 	</head>
 
 	<body>
@@ -21,38 +22,48 @@
 			<div class="title">Contact Details</div>
 			<div class="flex content-flex">
 				<div class="grid item">
-				<span class="label">Phone number</span>
-				<span class="content" >123456789</span>
+					<span class="label">Phone number</span>
+					<span class="content" >123456789</span>
 				</div>
 				<div class="grid item">
-				<span class="label">Alternate phone number</span>
-				<span class="content" >123456789</span>
+					<span class="label">Alternate phone number</span>
+					<span class="content" >123456789</span>
 				</div>
 				<div class="grid item">
-				<span class="label">Email address</span>
-				<span class="content" >asdasd@sdfadf.com</span>
+					<span class="label">Email address</span>
+					<span class="content" >asdasd@sdfadf.com</span>
 				</div>
 				<div class="grid item">
-				<span class="label">Alternate email address</span>
-				<span class="content" >kljkjkl@kjkjkl.com</span>
+					<span class="label">Alternate email address</span>
+					<span class="content" >kljkjkl@kjkjkl.com</span>
 				</div>
 			</div>
 			<div class="title">Change Password</div>
-			<form action="#">
+			<div class="grid" id="criteria">
+				<ul>
+					<li id="minchars" class="unverified">Min 8 characters</li>
+					<li id="minnum" class="unverified">Atleast 1 number</li>
+					<li id="minsym" class="unverified">Atleast 1 special character</li>
+					<li id="mustmatch" class="unverified">New password and Confirm password must match</li>
+				</ul>
+			</div>
+
+			<form >
 				<div class="flex content-flex">
 					<div class="grid item" id="oldpass">
 						<span class="label">Current Password</span>
-						<span class="content"><input type="password" name="cur"></input></span>
+						<span class="content"><input required="true" id="curpass" type="password" name="cur"></input></span>
 					</div>
 					<div class="grid item">
 						<span class="label">New Password</span>
-						<span class="content"><input type="password" name="new"></span>
+						<span class="content"><input required="true" id="newpass" type="password" name="new"></span>
 					</div>
 					<div class="grid item">
 						<span class="label">Confirm Password</span>
-						<span class="content"><input type="password" name="repeat"></span>
+						<span class="content"><input required="true" id="confirmpass" type="password" name="repeat"></span>
 					</div>
 				</div>
+
 				<div id="subm-wrapper" class="grid">
 					<input type="submit" id="subm" value="SUBMIT">
 				</div>
