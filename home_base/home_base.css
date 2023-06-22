@@ -26,20 +26,7 @@ body.dark {
     --text-color: #CCC;    
 }
 
-a:link , a:visited{
-    text-decoration: none;
-    background-color: var(--primary-color-light);
-    color: var(--primary-color);
-    border: 2px solid var(--text-color);
-    padding: 0.2% .5% 0.2% .5%;
-    text-align: center;
-    display: inline-block;
-    margin: 0.5% 0.5%;
-    width: 8%;
-}
-
-a:hover, a:active {
-    color: var(--primary-color-light);
-    background-color: var(--text-color);
-    transition: var(--trans-03);
+.placeholder_text {
+    margin-left: 20px;
+    color: var(--text-color);
 }

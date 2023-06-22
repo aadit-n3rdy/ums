@@ -15,14 +15,4 @@ const body = document.querySelector("body"),
 
       modeSwitch.addEventListener("click", () =>{
         body.classList.toggle("dark");
-
-        if(body.classList.contains("dark")){
-          modeText.innerText = "Light Mode"
-          child_mode = 1
-        }else{
-          modeText.innerText = "Dark Mode"
-          child_mode = 0
-        }
       });
-
-      var message = "Hello, world!";

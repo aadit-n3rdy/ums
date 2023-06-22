@@ -1,6 +1,6 @@
 var test = parent.document.getElementById("main_body");
 var class_state = test.classList.contains("dark");
-var body = document.getElementById("marks_body");
+var body = document.getElementById("home_base_body");
 
 const options = {
     attributes: true
