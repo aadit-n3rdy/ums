@@ -63,3 +63,7 @@ a {
 .dropopts a:hover {
 	background-color: var(--brand-color);
 }
+
+#events {
+	margin: 1rem;
+}
