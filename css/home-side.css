@@ -8,19 +8,40 @@
 }
 
 :root {
-    /* color scheme */
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
-    --primary-color: #695CFE;
-    --primary-color-light: #F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
+	--brand-color: #399e5a;
+	--brand-color-dark: #205a34;
+	--brand-color-light: #78ce95;
 
-    /* transition colors */
-    --trans-02: all 0.2s ease;
-    --trans-03: all 0.3s ease;
-    --trans-04: all 0.4s ease;
-    --trans-05: all 0.5s ease;
+	--dark-color: #0a2733;
+	--dark2-color: #144e66;
+	--mid-color: #1b6788;
+	--light-color: #F6F5FF;
+	--light2-color: #FFF;
+	--light3-color: #B4AEFE;
+
+	--table1-color: #B8B3FE;
+	--table2-color: #B4AEFE;
+
+	--table-heading: #8A81FE;
+
+	--progress-complete: #01C472;
+	--progress-left: #E4E9F7;
+	/* color scheme */
+	--body-color: #E4E9F7;
+	--sidebar-color: #FFF;
+	--primary-color: #695CFE;
+	--primary-color-light: #F6F5FF;
+	--toggle-color: #DDD;
+	--text-color: #707070;
+
+    --input-wrong: #FE5CA0;
+    --input-right: #01C472;
+
+	/* transition colors */
+	--trans-02: all 0.2s ease;
+	--trans-03: all 0.3s ease;
+	--trans-04: all 0.4s ease;
+	--trans-05: all 0.5s ease;
 }
 
 body {
@@ -37,6 +58,11 @@ body.dark {
     --primary-color-light: #3A3B3C;
     --toggle-color: #FFF;
     --text-color: #CCC;    
+
+    --first-color: #f3efeb;
+    --second-color: #85aadb;
+    --fourth-color: #7a7199;
+    --fifth-color: #24213d;
 }
 /* ==Sidebar== */
 .sidebar {
