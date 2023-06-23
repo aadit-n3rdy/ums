@@ -1,27 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-* {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    /* color scheme */
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
-    --primary-color: #695CFE;
-    --primary-color-light: #F6F5FF;
-    --toggle-color: #DDD;
-    --text-color: #707070;
-
-    /* transition colors */
-    --trans-02: all 0.2s ease;
-    --trans-03: all 0.3s ease;
-    --trans-04: all 0.4s ease;
-    --trans-05: all 0.5s ease;
-}
+@import url('config.css');
 
 body {
     height: 100vh;
@@ -115,7 +92,7 @@ header .header-text {
 
 .header-text .abbri {
     font-size: 19px;
-    font-weight: 600;
+    font-weight: bolder;
 }
 
 .header-text .full-form {

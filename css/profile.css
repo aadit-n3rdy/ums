@@ -1,9 +1,9 @@
-@import url('./config.css');
+@import url('config.css');
 
 #contentdiv {
-	background-color: var(--light-color);
-	width: 80%;
-	margin: auto;
+	background-color: var(--sidebar-color);
+
+	margin: 1em 1em;
 	margin-top: 1em;
 	padding: 1rem;
 }
@@ -27,7 +27,7 @@
 
 #name {
 	font-weight:bold;
-	font-size: 50px;
+	font-size: 3rem;
 	width: 100%;
 	margin: auto;
 	text-align: left;
@@ -35,17 +35,17 @@
 
 .maindet {
 	font-weight:normal;
-	font-size: 30px;
+	font-size: 2rem;
 	width: 100%;
 	text-align: left;
 }
 
 .title {
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 2rem;
 	margin: auto;
-	background-color: lightgray;
-	color: var(--dark-color);
+	background-color: var(--primary-color-light);
+	color: black;
 	padding: 1rem;
 	margin-top: 1em;
 	margin-bottom: 0.5em;
@@ -66,13 +66,13 @@
 
 
 .content {
-	font-size: 25px;
-	margin: 0px 10px;
-	padding: 10px;
+	font-size: 1.5rem;
+	margin: 0px 0rem;
+	padding: 0.2rem 0rem;
 }
 
 .label {
-	color: darkslategrey;
+	color: var(--text-color);
 }
 
 #oldpass {
@@ -82,23 +82,28 @@
 
 .content input {
 	height: 100%;
-	padding: 5px;
-	border: 2px solid var(--light2-color);
-	border-radius: 2px;
+	padding: 0.1rem;
+	border: 2px solid var(--primary3-color);
+	border-radius: 6px;
 	outline: none;
 	width: 15em;
 	max-width: 25vw;
 }
 
+.content input:focus {
+	border: 2px solid var(--primary-color);
+	transition: var(--trans-04);
+}
+
 #subm {
 	width: 10em;
-	padding: 10px;
-	background-color: var(--brand-color);
-	color: var(--light-color);
+	padding: 0.5rem;
+	background-color: var(--primary2-color);
+	color: var(--primary-color-light);
 }
 
 #subm:hover {
-	background-color: var(--brand-color-dark);
+	background-color: var(--primary-color);
 	transition: .4s;
 }
 
@@ -112,11 +117,11 @@
 }
 
 .verified {
-	color: green;
+	color: var(--input-right);
 }
 
 .unverified {
-	color: red;
+	color: var(--input-wrong);
 }
 
 

@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root {
-	--brand-color: #399e5a;
-	--brand-color-dark: #205a34;
-	--brand-color-light: #78ce95;
+	/*basic color scheme */
+	--body-color: #E4E9F7;
+	--sidebar-color: #FFF;
+	--primary-color: #695CFE;
+	--primary-color-light: #F6F5FF;
+	--toggle-color: #DDD;
+	--text-color: #707070;
+	/* basic color scheme */
 
-	--dark-color: #0a2733;
-	--dark2-color: #144e66;
-	--mid-color: #1b6788;
-	--light-color: #ffffff;
-	--light2-color: #88cbe7;
+	/* accessories */
+	--progress-complete: #01C472;
+	--progress-left: #E4E9F7;
+	--input-wrong: #FE5CA0;
+    --input-right: #01C472;
+	/* accessories */
+
+	--primary3-color: #B8B3FE;
+	--primary4-color: #B4AEFE;
+	--primary2-color: #8A81FE;
+
+	/* transitions */
+	--trans-02: all 0.2s ease;
+	--trans-03: all 0.3s ease;
+	--trans-04: all 0.4s ease;
+	--trans-05: all 0.5s ease;
+	/* transitions */
 }
 
 * {
@@ -19,6 +37,7 @@
 	padding: 0px;
 	font-family: 'Lato', sans-serif;
 	font-size: 17px;
+	border-radius: 6px;
 }
 
 a {
@@ -32,38 +51,4 @@ a {
 
 .grid {
 	display: grid;
-}
-
-.dropdown {
-	position: relative;
-}
-
-.dropopts {
-	display: none;
-	position: absolute;
-	z-index: 1;
-	background-color: var(--dark2-color);
-	width: 100%;
-}
-
-.dropopts * {
-	text-decoration: none;
-	padding: 10px;
-}
-
-.dropdown:hover .dropopts {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	margin-top: 10px;
-	left: 0px;
-	border-radius: 0px;
-}
-
-.dropopts a:hover {
-	background-color: var(--brand-color);
-}
-
-#events {
-	margin: 1rem;
 }

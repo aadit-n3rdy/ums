@@ -1,16 +1,10 @@
-:root {
-    --black:#12181e;
-    --dark-green:#27ac1f;
-    --light-green:#85fe78;
-    --white:#ffffff;
-    --grey:#ddd;
-}
+@import url('config.css');
 
 a:link , a:visited{
     text-decoration: none;
-    background-color: var(--white);
-    color: var(--black);
-    border: 2px solid var(--black);
+    background-color: var(--primary4-color);
+    color: var(--sidebar-color);
+	border-radius: 6px;
     padding: 0.2% .5% 0.2% .5%;
     text-align: center;
     display: inline-block;
