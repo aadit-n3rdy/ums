@@ -3,11 +3,13 @@
 body {
     height: 100vh;
     background: var(--body-color);
+    background-image: linear-gradient(to bottom right,var(--primary3-color),var(--progress-complete)); 
     transition: var(--trans-05);
 }
 
 body.dark {
     /* dark color scheme */
+    background-color: linear-gradient(to bottom right,#F0F2F0,#000C40);
     --body-color: #18191A;
     --sidebar-color: #242526;
     --primary-color: #6528e0;

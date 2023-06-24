@@ -40,6 +40,11 @@
 	border-radius: 6px;
 }
 
+body {
+	background-attachment: fixed;
+    background-image: linear-gradient(to bottom right,var(--primary3-color),var(--progress-complete)); 
+}
+
 a {
 	all:unset;
 	cursor:pointer;
