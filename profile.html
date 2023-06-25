@@ -8,7 +8,74 @@
 	</head>
 
 	<body>
-		<div id="contentdiv">
+		<div class="grid" id="content-grid">
+			<div class="content-container flex" id="page-header-container">
+				<div class="content page-header" id="page-header">Profile</div>
+			</div>
+			<div class="content-container flex" id="maindet-container">
+				<img id="pfp" src="assets/pfp.jpg">
+				<div class="flex" id="maindetdiv"> 
+					<div class="header" id="name">Chatur Ramalingam</div>
+					<div class="maindet">CB.EN.U4CSE22189</div>
+					<div class="maindet">2022-26 Batch</div>
+					<div class="maindet">B. Tech CSE</div>
+				</div>
+			</div>
+			<div class="content-container flex" id="contact-container">
+				<div class="header">Contact Details</div>
+				<div class="flex content-flex">
+					<div class="grid item">
+						<span class="label">Phone number</span>
+						<span class="content" >123456789</span>
+					</div>
+					<div class="grid item">
+						<span class="label">Alternate phone number</span>
+						<span class="content" >123456789</span>
+					</div>
+					<div class="grid item">
+						<span class="label">Email address</span>
+						<span class="content" >asdasd@sdfadf.com</span>
+					</div>
+					<div class="grid item">
+						<span class="label">Alternate email address</span>
+						<span class="content" >kljkjkl@kjkjkl.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="content-container flex" id="password-container">
+				<div class="header">Change Password</div>
+				<div class="grid" id="criteria">
+					<ul>
+						<li id="minchars" class="unverified">Min 8 characters</li>
+						<li id="minnum" class="unverified">Atleast 1 number</li>
+						<li id="minsym" class="unverified">Atleast 1 special character</li>
+						<li id="mustmatch" class="unverified">New password and Confirm password must match</li>
+					</ul>
+				</div>
+				<form >
+					<div class="flex content-flex">
+						<div class="grid item" id="oldpass">
+							<span class="label">Current Password</span>
+							<span class="content"><input required="true" id="curpass" type="password" name="cur"></input></span>
+						</div>
+						<div class="grid item">
+							<span class="label">New Password</span>
+							<span class="content"><input required="true" id="newpass" type="password" name="new"></span>
+						</div>
+						<div class="grid item">
+							<span class="label">Confirm Password</span>
+							<span class="content"><input required="true" id="confirmpass" type="password" name="repeat"></span>
+						</div>
+					</div>
+
+					<div id="subm-wrapper" class="grid">
+						<input type="submit" id="subm" value="SUBMIT">
+					</div>
+			</div>
+
+		</div>
+		<!--
+			<div id="contentdiv">
 			<div class="flex" id="basic-det">
 				<img id="pfp" src="assets/pfp.jpg">
 				<div class="flex" id="maindetdiv"> 
@@ -38,40 +105,12 @@
 					<span class="content" >kljkjkl@kjkjkl.com</span>
 				</div>
 			</div>
-			<div class="title">Change Password</div>
-			<div class="grid" id="criteria">
-				<ul>
-					<li id="minchars" class="unverified">Min 8 characters</li>
-					<li id="minnum" class="unverified">Atleast 1 number</li>
-					<li id="minsym" class="unverified">Atleast 1 special character</li>
-					<li id="mustmatch" class="unverified">New password and Confirm password must match</li>
-				</ul>
-			</div>
-
-			<form >
-				<div class="flex content-flex">
-					<div class="grid item" id="oldpass">
-						<span class="label">Current Password</span>
-						<span class="content"><input required="true" id="curpass" type="password" name="cur"></input></span>
-					</div>
-					<div class="grid item">
-						<span class="label">New Password</span>
-						<span class="content"><input required="true" id="newpass" type="password" name="new"></span>
-					</div>
-					<div class="grid item">
-						<span class="label">Confirm Password</span>
-						<span class="content"><input required="true" id="confirmpass" type="password" name="repeat"></span>
-					</div>
-				</div>
-
-				<div id="subm-wrapper" class="grid">
-					<input type="submit" id="subm" value="SUBMIT">
-				</div>
 
 			</form>
 
 
 		</div>
+		-->
 
 
 	</body>
