@@ -1,0 +1,123 @@
+@import url('config.css');
+
+#sem_subj-grid {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 23vi;
+	gap: 1rem;
+	margin: 1rem;
+}
+
+.subj-container {
+	display: flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	background-color: var(--sidebar-color);
+	opacity: 0.8;
+	transition: 0.4s;
+    position: relative;
+}
+
+.subj-container::before {
+    content: "";
+	background-image: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.4;
+}
+
+.psat::before {
+	background-image: url('../images/psat.jpg')
+}
+
+.hardware::before {
+	background-image: url("../images/hardware.png");
+}
+
+.system::before {
+	background-image: url("../images/system.jpg");
+}
+
+.english::before {
+	background-image: url("../images/english.jpg");
+}
+
+.math1::before {
+	background-image: url("../images/math1.jpg");
+}
+
+.math2::before {
+	background-image: url("../images/math2.jpg");
+}
+
+.math3::before {
+	background-image: url("../images/math3.jpg");
+}
+
+.cult::before {
+	background-image: url("../images/cult.jpg");
+}
+
+.mastery::before {
+	background-image: url("../images/mastery.jpg");
+}
+
+.engineering::before {
+	background-image: url("../images/engineering.jpg");
+}
+
+.c::before {
+	background-image: url("../images/c.jpg");
+}
+
+.html::before {
+	background-image: url("../images/html.png");
+}
+
+.data::before {
+	background-image: url("../images/data.png");
+}
+
+.cult2::before {
+	background-image: url("../images/cult2.jpg");
+}
+
+.linear::before {
+	background-image: url("../images/linear.png");
+}
+
+.discrete::before {
+	background-image: url("../images/discrete.jpg");
+}
+
+.electric::before {
+	background-image: url("../images/electric.jpg");
+}
+
+.electriclab::before {
+	background-image: url("../images/electriclab.jpg");
+}
+
+.manufacturing::before {
+	background-image: url("../images/manufacturing.jpg");
+}
+
+.physics::before {
+	background-image: url("../images/physics.png");
+}
+
+.subj-text {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-variant:small-caps;
+    position: relative;
+}
+
+.subj-container:hover {
+	opacity: 1;
+}

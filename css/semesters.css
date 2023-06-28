@@ -1,9 +1,5 @@
 @import url('config.css');
 
-* {
-//	border: 1px solid black;
-}
-
 #sem-grid {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-auto-rows: 23vi;
