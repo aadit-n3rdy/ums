@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/home-side.css">
+    <link rel="stylesheet" href="css/homepage.css">
 
     <!--Boxicons CSS-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Chart JS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
+
+    <div class="align">
+        <div class="graph">
+            <canvas id="marks"></canvas>
+        </div>
+
+        <div class="summary">
+            <h1>Summary:</h1>
+            <h3>Distinction:</h3>
+            <p id="above"></p>
+            <br>
+            <h3>Below Average:</h3>
+            <p id="below"></p>
+            <br>
+            <h3>Arrear:</h3>
+            <p id="arrear"></p>
+        </div>
+    </div>
+    
+    
+    <script src="/ums/scripts/homepage.js"></script>
 </body>
 </html>

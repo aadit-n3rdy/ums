@@ -1,0 +1,26 @@
+@import url("config.css");
+
+.align {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    position: absolute;
+    left: 40%;
+}
+
+.summary {
+    background: var(--primary-color-light);
+}
+
+.graph {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: white;
+}
+
+#marks {
+    
+    width: 800px;
+    height: 800px;
+    max-width: 1000px;
+}
