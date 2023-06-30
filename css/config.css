@@ -16,6 +16,7 @@
 	--progress-left: #E4E9F7;
 	--input-wrong: #f20c14;
     --input-right: #10b06d;
+	--input-mid: #efff00;
 	/* accessories */
 
 	--primary3-color: #B8B3FE;
@@ -130,4 +131,52 @@ td {
 .header {
 	font-size: 2rem;
 	padding: 0.5rem;
+}
+
+.slider {
+	outline:none;
+	height:25px;
+	width: 80%;
+	margin: 1rem;
+	align-self: center;
+	appearance:none;
+	height: 0.5rem;
+	border-radius: 6px;
+/*	background:linear-gradient(to left, var(--input-right), var(--input-mid), var(--input-wrong));*/
+	background: var(--sidebar-color);
+	accent-color: var(--primary-color);
+}
+
+.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+	appearance:none;
+	width: 1rem;
+	height: 1rem;
+	cursor: pointer;
+	outline:none;
+	background-color: var(--primary2-color);
+	border-radius: 50%;
+}
+
+.slider::-moz-range-track {
+	height: 0.5rem;
+	border: 3px solid var(--primary2-color);
+	border-radius: 6px;
+}
+
+.slider::-moz-range-progress {
+	background-color: var(--primary2-color);
+	height: 0.5rem;
+	border-radius: 6px;
+}
+
+.slider-gradation {
+	align-self: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows:max-content;
+	width: 80%;
+}
+
+.slider-gradation option {
+	text-align: center;
 }

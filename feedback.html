@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>UMS | Feedback</title>
+		<link rel="stylesheet" href="css/feedback.css">
+		<script src="scripts/feedbackSubmit.js"></script>
+	</head>
+
+	<body>
+		<div id="submitted"></div>
+		<form onsubmit="return feedbackSubmit()">
+			<ol>			
+				<div id="container">
+					<div id="page-header-container" class="content-container">
+						<div id="page-header">Teacher Feedback - Dr. Viru Sahastrabuddhe</div>
+					</div>
+					<div class="content-container">
+						<li class="feedback-question">How would you rate the overall teaching effectiveness of your teacher?</li>
+						<input type="range" required="required" name="overall" list="gradation1" min="-1" max="1" value="0" class="slider" step="any">
+						<datalist id="gradation" class="slider-gradation">
+							<option value="-1" label="Disagree"></option>
+							<option value="0" label="Sometimes"></option>
+							<option value="1" label="Agree"></option>
+						</datalist>
+					</div>
+
+					<div class="content-container">
+						<li class="feedback-question">Did your professor create a conducive learning environment in the classroom?</li>
+
+						<input type="range" required="required" name="conducive" list="gradation" min="-1" max="1" value="0" class="slider" step="any">
+						<datalist id="gradation" class="slider-gradation">
+							<option value="-1" label="Disagree"></option>
+							<option value="0" label="Sometimes"></option>
+							<option value="1" label="Agree"></option>
+						</datalist>
+
+					</div>
+
+					<div class="content-container">
+						<li class="feedback-question">Did your professor effectively communicate course materials and concepts?</li>
+						<input type="range" required="required" name="communicate" list="gradation" min="-1" max="1" value="0" class="slider" step="any">
+						<datalist id="gradation" class="slider-gradation">
+							<option value="-1" label="Disagree"></option>
+							<option value="0" label="Sometimes"></option>
+							<option value="1" label="Agree"></option>
+						</datalist>
+					</div>
+
+					<div class="content-container">
+						<li class="feedback-question">How accessible was your professor outside of class for questions or clarification?</li>
+						<input type="range" required="required" name="clarification" list="gradation" min="-1" max="1" value="0" class="slider" step="any">
+						<datalist name="gradation" class="slider-gradation">
+							<option value="-1" label="Disagree"></option>
+							<option value="0" label="Sometimes"></option>
+							<option value="1" label="Agree"></option>
+						</datalist>
+					</div>
+
+					<div class="content-container">
+						<li class="feedback-question">Did your professor provide timely and helpful feedback on assignments and exams?</li>
+						<input type="range" required="required" name="feedback" list="gradation" min="-1" max="1" value="0" class="slider" step="any">
+						<datalist name="gradation" class="slider-gradation">
+							<option value="-1" label="Disagree"></option>
+							<option value="0" label="Sometimes"></option>
+							<option value="1" label="Agree"></option>
+						</datalist>
+					</div>
+
+					<div class="content-container">
+						<li class="feedback-question">Please provide any suggestions to improve the quality of the class</li>
+						<textarea name="subjective" id="subjective"></textarea>
+					</div>
+
+					<div class="content-container" id="subm-container">
+						<span id="feedback-msg">Thank you for your valuable feedback! </span>
+						<input type="submit" value="Submit" id="subm">
+					</div>
+			</ol>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('config.css');
+
+#page-header-container {
+	grid-column-start:unset;
+	grid-column-end:unset;
+}
+
+#container {
+	display: grid;
+	grid-template-rows:max-content;
+	margin: auto;
+	align-items: center;
+	width: 100%;
+}
+
+.content-container {
+	display: flex;
+	gap: 1rem;
+	align-items:left;
+	position: relative;
+}
+
+ol {
+	list-style-position:inside;
+	width: 100%;
+}
+
+li {
+	list-style-position:inside;
+	list-style-type:decimal;
+}
+
+.feedback-question {
+	font-size: 1.5rem;
+}
+
+datalist {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: auto;
+}
+
+#subjective {
+	border: 2px solid var(--primary2-color);
+	outline: none;
+	padding: 0.5rem;
+}
+
+#subjective:active {
+	border: 2px solid var(--primary-color);
+}
+
+#subm {
+	width: 10em;
+	padding: 0.5rem;
+	background-color: var(--primary2-color);
+	color: var(--primary-color-light);
+}
+
+#subm:hover {
+	background-color: var(--primary-color);
+	transition: .4s;
+}
+
+#feedback-msg {
+	margin: 0.5rem;
+	font-size: 1.5rem;
+}
+
+#subm-container {
+	flex-direction: row;
+	justify-content:space-between;
+}
