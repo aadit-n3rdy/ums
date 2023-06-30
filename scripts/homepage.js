@@ -1,5 +1,6 @@
 //script for home-page + graph for semester score
 
+
 const ctx = document.getElementById('marks');
 
 const subjects = [
@@ -14,6 +15,19 @@ const subjects = [
     '19CUL111',
     '19PHY101'
 ];
+
+const links = [
+    "subjects/sem_ii/19cse102.html",
+    "subjects/sem_ii/19cse103.html",
+    "subjects/sem_ii/19cse111.html",
+    "subjects/sem_ii/19mat112.html",
+    "subjects/sem_ii/19mat115.html",
+    "subjects/sem_ii/19mee181.html",
+    "subjects/sem_ii/19eee111.html",
+    "subjects/sem_ii/19eee182.html",
+    "subjects/sem_ii/19cul111.html",
+    "subjects/sem_ii/19phy101.html",
+]
 
 const student_marks = [8.4,
     9.2,
@@ -54,22 +68,34 @@ const arrear = [
 ];
 
 var i,j;
+
+ 
+
 for(i=0;i<10;i++) {
-    for(j=0;j<10;j++) {
-        if(student_marks[i]>average[j]) {
-            document.getElementById("above").append(subjects[i]+" ");
+        var link = document.createElement("a");
+        link.href = links[i];
+        link.innerHTML = subjects[i]; 
+
+        if(student_marks[i]>=9.0) {
+            document.getElementById("distinction").append(link);
+            document.getElementById("distinction").append(" ");
+            j=11;
+        } else if(student_marks[i]>average[i]) {
+            document.getElementById("above").append(link);
+            document.getElementById("above").append(" ");
             j=11;
         }
-        else if(student_marks[i]<arrear[j])
+        else if(student_marks[i]<arrear[i])
         {
-            document.getElementById("arrear").append(subjects[i]+" ");
+            document.getElementById("below").append(link);
+            document.getElementById("below").append(" ");
             j=11;
         }
         else {
-            document.getElementById("below").append(subjects[i]+" ");
+            document.getElementById("arrear").append(link);
+            document.getElementById("arrear").append(" ");
             j=11;
         }
-    }
 }
 
 const graph = new Chart(ctx, {
@@ -81,14 +107,18 @@ const graph = new Chart(ctx, {
                 label: "Student",
                 data: student_marks,
                 borderColor: "pink",
-                backgroundColor: "pink",
+                backgroundColor: "rgba(255, 192, 203, 0.4)",
                 fill: false,
+                pointBackgroundColor: "rgba(254, 197, 229, 0.4)",
+                pointBorderColor: "rgba(254, 197, 229, 1)",
             },
             {
                 label: "Average",
                 data: average,
                 borderColor: "purple",
                 fill: true,
+                pointBackgroundColor: "rgba(181, 126, 220, 0.4)",
+                pointBorderColor: "rgba(181, 126, 220, 1)",
             },
             {
                 label: "Arrear",
@@ -96,6 +126,8 @@ const graph = new Chart(ctx, {
                 borderColor: "red",
                 backgroundColor: "rgba(255,138,138,0.4)",
                 fill:true,
+                pointBackgroundColor: "rgba(254, 125, 106, 0.4)",
+                pointBorderColor: "rgba(254, 125, 106, 1)",
             }
         ],  
     },

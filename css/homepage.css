@@ -8,19 +8,33 @@
     left: 40%;
 }
 
+h1 {
+    font-size: 150%;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: 600;
+}
+
 .summary {
     background: var(--primary-color-light);
 }
 
 .graph {
-    margin: 0 auto;
+    margin-top: 10px;
     margin-bottom: 10px;
     background: white;
 }
 
 #marks {
-    
     width: 800px;
     height: 800px;
     max-width: 1000px;
+}
+
+a:hover{
+    color: var(--primary-color);
 }
