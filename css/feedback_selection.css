@@ -1,0 +1,74 @@
+@import url('config.css');
+
+#sem-grid {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 23vi;
+	gap: 1rem;
+	margin: 1rem;
+}
+
+.sem-container {
+	display: flex;
+	flex-direction:column;
+	justify-content: space-evenly;
+	background-color: var(--sidebar-color);
+	opacity: 0.8;
+	transition: 0.4s;
+	position: relative;
+}
+
+.sem-text {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-variant:small-caps;
+}
+
+.sem-container:hover {
+	opacity: 1;
+}
+
+.sem-container::before {
+	content: "";
+	background-image: none;
+	background-repeat: none;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.4;
+}
+
+.viru::before {
+	background-image: url("../images/feedback/virus.webp");
+}
+
+.albert::before {
+	background-image: url("../images/feedback/albert.jpg");
+}
+
+.buddha::before {
+	background-image: url("../images/feedback/buddha.jpg");
+}
+
+.savage::before {
+	background-image: url("../images/feedback/savage.jpg");
+}
+
+.hendrix::before {
+	background-image: url("../images/feedback/hendrix.jpg");
+}
+
+.dog::before {
+	background-image: url("../images/feedback/dog.webp");
+}
+
+.mystery::before {
+	background-image: url("../images/feedback/mystery.jpg");
+}
+
+.alien::before {
+	background-image: url("../images/feedback/alien.jpg");
+}
