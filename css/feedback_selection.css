@@ -22,6 +22,7 @@
 	font-size: 2.5rem;
 	font-weight: bold;
 	font-variant:small-caps;
+	color: var(--text-color)
 }
 
 .sem-container:hover {

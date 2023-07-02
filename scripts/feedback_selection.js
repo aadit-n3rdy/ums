@@ -25,7 +25,7 @@ function handleSemClick(evt) {
         const name = JSON.stringify(txt);
         localStorage.setItem('click',name);
     } else if(txt=="ș̶̢͕̻̦̳͇̥̜͓͚̅̽̌͐̀̍͊̾͛̍̐͗́̎a̸͚͎̤̬̤̣͒̂͊̈́͛͠v̷̙̲̩̲̝͉̖̱̝̗͔͚̮̜̘̽̾͝e̷̳̳̤͕̎̽̆̀͑̆͑͊̐́̉ ̶̰̺̟̭͍͈͙̱̜̀̉̀̇̅͋̔̈́̃̀̉͝ͅḿ̷̧̼̮̳͇̰̞̻͖͍̜̲̩̬̼͌͂̒̈́͘͠e̵̙͉͎͎͗̽") {
-        const name = JSON.stringify(txt);
+        const name = JSON.stringify("Alien");
         localStorage.setItem('click',name);
     }
 	window.open(`feedback.html`, "frame")
@@ -37,3 +37,14 @@ window.addEventListener("load", function() {
 		sem.addEventListener("click", handleSemClick)
 	}
 })
+
+//code to change color scheme based on light and dark mode
+function color() {
+    if(JSON.parse(localStorage.getItem("color-mode"))=="dark") {
+        document.documentElement.setAttribute("data-theme","dark");
+    } else {
+        document.documentElement.removeAttribute("data-theme","dark");
+    }
+}
+
+setInterval(color, 0);

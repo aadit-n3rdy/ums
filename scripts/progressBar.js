@@ -11,3 +11,13 @@ window.addEventListener("load", (function () {
 }
 ));
 
+//code to change color scheme based on light and dark mode
+function color() {
+    if(JSON.parse(localStorage.getItem("color-mode"))=="dark") {
+        document.documentElement.setAttribute("data-theme","dark");
+    } else {
+        document.documentElement.removeAttribute("data-theme","dark");
+    }
+}
+
+setInterval(color, 0);

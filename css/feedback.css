@@ -1,5 +1,9 @@
 @import url('config.css');
 
+body {
+	color: var(--text-color);
+}
+
 #page-header-container {
 	grid-column-start:unset;
 	grid-column-end:unset;

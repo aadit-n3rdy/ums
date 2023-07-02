@@ -1,7 +1,7 @@
 @import url('config.css');
 
-* {
-/*	border: 1px solid black;*/
+body {
+	color: var(--text-color);
 }
 
 #contentdiv {

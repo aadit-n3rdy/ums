@@ -18,3 +18,14 @@ window.addEventListener("load", function() {
 var path = window.location.pathname
 path = path.split("/").pop()
 path = path.split(".")[0]
+
+//code to change color scheme based on light and dark mode
+function color() {
+    if(JSON.parse(localStorage.getItem("color-mode"))=="dark") {
+        document.documentElement.setAttribute("data-theme","dark");
+    } else {
+        document.documentElement.removeAttribute("data-theme","dark");
+    }
+}
+
+setInterval(color, 0);

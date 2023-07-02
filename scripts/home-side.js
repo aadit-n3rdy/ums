@@ -18,8 +18,10 @@ const body = document.querySelector("body"),
 
         if(body.classList.contains("dark")){
           modeText.innerText = "Light Mode"
+          localStorage.setItem('color-mode',JSON.stringify("dark"))
         }else{
           modeText.innerText = "Dark Mode"
+          localStorage.setItem('color-mode',JSON.stringify("light"))
         }
       });
 
