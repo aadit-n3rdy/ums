@@ -1,7 +1,6 @@
-
 window.addEventListener("load", (function () {
 	let bars = document.getElementsByClassName("progress-bar")
-	for (bar of bars) {
+	for (let bar of bars) {
 		let child = bar.getElementsByClassName("progress-text")[0]
 		let num = parseInt(child.innerText)
 		console.log(num)

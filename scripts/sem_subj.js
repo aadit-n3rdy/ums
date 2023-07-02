@@ -2,6 +2,9 @@ function handleSubjectClick(evt) {
 	let e = evt.currentTarget
 	const txt = e.childNodes[1].innerText
 	const val = txt.toLowerCase()
+
+	localStorage.setItem('subject',JSON.stringify(val));
+
 	window.open(`../subjects/${path}/${val}.html`, "frame")
 }
 

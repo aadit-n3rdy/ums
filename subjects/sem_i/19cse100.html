@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>psat data</p>
-</body>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../css/subject.css">
+		<title>Subject | UMS</title>
+	</head>
+	<body>
+		<div class="grid" id="content-grid">
+			<div class="content-container flex" id="page-header-container">
+				<!-- CHANGE THE NEXT 2 VALUES -->
+				<div class="content main-heading" id="page-header">19CSE100</div>
+				<div class="content" id="sub-desc">Problem Solving and Alogrithmic Thinking</div>
+			</div>
+			<div class="content-container flex" id="progress-container">
+				<div class="progress-bar-container">
+					<div class="progress-bar" id="progress-score" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-text">
+						    92.5% <!-- CHANGE THIS VALUE-->
+						</div>
+
+					</div>
+					<div class="progress-header">
+						Current Score 
+					</div>
+				</div>
+				<div class="progress-bar-container">
+					<div class="progress-bar" id="progress-att" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-text">
+							94% <!-- CHANGE THIS VALUE -->
+						</div>
+					</div>
+					<div class="progress-header">
+						Attendance 
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content-container" id="scores-container">
+				<div class="header" id="scores-header">Test Scores</div>
+				<table id="scores">
+				<!-- CHANGE THE FOLLOWING VALUES -->
+					<tr>
+						<th>Test/Exam name</th>
+						<th>Score</th>
+						<th>Total</th>
+						<th>Weightage in final score</th>
+					</tr>
+					<tr>
+						<td>Periodical-1</td>
+						<td>49</td>
+						<td>50</td>
+						<td>10%</td>
+					</tr>
+					<tr>
+						<td>Periodical-2</td>
+						<td>48</td>
+						<td>50</td>
+						<td>10%</td>
+					</tr>
+                    <tr>
+						<td>End Semester</td>
+						<td>42.5</td>
+						<td>50</td>
+						<td>50%</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="content-container flex" id="events-container">
+				<div class="header" id="events-header">Upcoming Events</div>
+				<table id="events">
+					<tr>
+                        <td>All tests are over</td>
+                    </tr>
+				</table>
+			</div>
+
+		</div>
+		<script src="../../scripts/progressBar.js" type="text/javascript"></script>
+	</body>
 </html>
