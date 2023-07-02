@@ -1,4 +1,4 @@
-@import url('./config.css');
+@import url('config.css');
 
 body {
 	display: grid;
@@ -82,7 +82,7 @@ form .option_div {
 
 .button input {
 	padding-left: 0;
-	background: var(--dark-green);
+	background: var(--primary2-color);
 	color: white;
 	border: none;
 	font-size: 20px;
@@ -92,7 +92,7 @@ form .option_div {
 }
 
 .button input:hover {
-	background: var(--darker-green);
+	background: var(--primary-color);
 }
 
 form .sign_up {
