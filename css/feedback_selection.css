@@ -62,14 +62,14 @@
 	background-image: url("../images/feedback/hendrix.jpg");
 }
 
-.dog::before {
-	background-image: url("../images/feedback/dog.webp");
+.isaac::before {
+	background-image: url("../images/feedback/isaac.jpg");
 }
 
 .mystery::before {
 	background-image: url("../images/feedback/mystery.jpg");
 }
 
-.alien::before {
-	background-image: url("../images/feedback/alien.jpg");
+.thanos::before {
+	background-image: url("../images/feedback/thanos.jpg");
 }

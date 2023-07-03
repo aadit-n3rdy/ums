@@ -18,14 +18,14 @@ function handleSemClick(evt) {
     } else if(txt=="Jimmy Hendrix") {
         const name = JSON.stringify(txt);
         localStorage.setItem('click',name);
-    } else if(txt=="Dog") {
+    } else if(txt=="Isaac Newton") {
         const name = JSON.stringify(txt);
         localStorage.setItem('click',name);
-    } else if(txt=="???") {
+    } else if(txt=="Ezio") {
         const name = JSON.stringify(txt);
         localStorage.setItem('click',name);
-    } else if(txt=="ș̶̢͕̻̦̳͇̥̜͓͚̅̽̌͐̀̍͊̾͛̍̐͗́̎a̸͚͎̤̬̤̣͒̂͊̈́͛͠v̷̙̲̩̲̝͉̖̱̝̗͔͚̮̜̘̽̾͝e̷̳̳̤͕̎̽̆̀͑̆͑͊̐́̉ ̶̰̺̟̭͍͈͙̱̜̀̉̀̇̅͋̔̈́̃̀̉͝ͅḿ̷̧̼̮̳͇̰̞̻͖͍̜̲̩̬̼͌͂̒̈́͘͠e̵̙͉͎͎͗̽") {
-        const name = JSON.stringify("Alien");
+    } else if(txt=="Thanos") {
+        const name = JSON.stringify(txt);
         localStorage.setItem('click',name);
     }
 	window.open(`feedback.html`, "frame")
